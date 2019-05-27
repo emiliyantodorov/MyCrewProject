@@ -1,0 +1,25 @@
+.social-box {
+  
+  &__link {
+    display: inline-block;
+    padding-bottom: $padding-small;
+
+    &:not(:last-child) {
+      padding-right: $padding-small;
+    }
+
+    &:hover i {
+      color: $color-primary;
+    }
+    
+    i {
+      color: $color-white;
+      font-size: 3rem;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+  }
+}

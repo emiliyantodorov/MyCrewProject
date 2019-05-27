@@ -1,0 +1,21 @@
+.header {
+  //background: $color-black;
+  //background: #01a3a4;
+  background: #10ac84;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @media only screen and(max-width: 768px) {
+    //display: none;
+  };
+}
+
+.nav {
+  max-width: 120rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}

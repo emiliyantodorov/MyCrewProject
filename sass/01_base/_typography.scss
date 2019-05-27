@@ -1,0 +1,34 @@
+.heading-primary {
+  font-size: 13rem;
+  //font-weight: lighter;
+  font-family: Seascape;
+  @extend %gradientText;
+  //text-shadow:0 .8rem white;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  @extend %gradientText;
+}
+
+.about-heading {
+  color: $color-primary;
+  padding-bottom: $padding-medium;
+}
+
+.members-heading {
+  color: $color-primary;
+  padding-bottom: $padding-bigger;
+  font-size: 3rem;
+}
+
+.contacts-heading {
+  padding-bottom: $padding-bigger;
+  color: $color-primary;
+  font-size: 3rem;
+}
+
+.gallery-heading {
+  color: $color-primary;
+  padding-bottom: $padding-bigger;
+}

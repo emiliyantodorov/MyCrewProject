@@ -1,0 +1,29 @@
+.photo-list {
+  list-style: none;
+
+  &__item {
+
+    &--img:link {
+      height: 12rem;
+      display: block;
+      overflow: hidden;
+      margin-bottom: 3rem;
+
+      @media only screen and(min-width: 0) {
+        height: auto;
+      }
+
+      @media only screen and(min-width: 567px) {
+        height: 15rem;
+      }
+
+      @media only screen and(min-width: 768px) {
+        height: 13rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

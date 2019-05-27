@@ -1,0 +1,44 @@
+.contact-box {
+
+  &__icon {
+    font-size: 3rem;
+    padding-bottom: $padding-small;
+    display: block;
+  }
+
+  &__heading {
+    color: $color-primary;
+    padding-bottom: $padding-medium;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      @extend %contactBefore;
+    }
+  }
+
+  &__info {
+
+    span {
+
+      a {
+        display: block;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+      }
+      a:hover {
+        color: $color-primary;
+        -webkit-transform: translateY(-.3rem);
+        -moz-transform: translateY(-.3rem);
+        -ms-transform: translateY(-.3rem);
+        -o-transform: translateY(-.3rem);
+        transform: translateY(-.3rem);
+      }
+    }
+
+  }
+
+}

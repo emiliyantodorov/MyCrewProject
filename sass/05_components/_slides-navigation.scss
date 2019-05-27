@@ -1,0 +1,43 @@
+.slides-navigation {
+
+  a.prev {
+
+    left: 2rem;
+    opacity: .6;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .arrow-prev {
+      color: white;
+      font-size: 4rem;
+    }
+  }
+
+  a.next {
+    right: 2rem;
+    opacity: .6;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .arrow-next {
+      color: white;
+      font-size: 4rem;
+      position: relative;
+      z-index: 200;
+    }
+  }
+}

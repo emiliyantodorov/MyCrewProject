@@ -1,0 +1,35 @@
+/*
+RESET CSS
+ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+p {
+  line-height: 145%;
+}
+
+ h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+

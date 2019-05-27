@@ -1,0 +1,27 @@
+%center-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+%gradientText {
+  color: transparent;
+  background: linear-gradient(to right, #c8d6e5, #10ac84);
+  -webkit-background-clip: text;
+}
+
+%contactBefore {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3%;
+  background: $color-primary;
+  top: 3.3rem;
+
+}

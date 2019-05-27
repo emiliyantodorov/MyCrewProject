@@ -1,0 +1,40 @@
+.inner-nav-members {
+  display: none;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 6rem;
+  width: 100%;
+  text-align: center;
+
+  @media only screen and(max-width: 767px) {
+    width: 50%;
+    right: 0;
+    left: unset;
+    z-index: 6000;
+  }
+
+  &__item {
+    background: #1dd1a1;
+
+    &--link {
+      color: $color-white;
+
+      &:link {
+        display: block;
+        padding: 1rem 0;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        
+        &:hover {
+          background: #10ac84;
+        }
+      }
+    }
+
+  }
+}
+

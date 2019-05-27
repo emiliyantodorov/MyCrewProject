@@ -1,0 +1,656 @@
+//MY GRID FROM 12 COLUMNS
+$gutter-horizontal: 3rem;
+$gutter-vertical: 3rem;
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+[class*=col-] {
+  padding: 0 1.5rem;
+  min-height: 1px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+}
+
+.col {
+  flex: 0 0 100%;
+}
+
+.col-xs-1 {
+  flex: 0 0 8.332%;
+}
+
+.col-xs-2 {
+  flex: 0 0 16.662%;
+}
+
+.col-xs-3 {
+  flex: 0 0 25%;
+}
+
+.col-xs-4 {
+  flex: 0 0 33.332%;
+}
+
+.col-xs-5 {
+  flex: 0 0 41.662%;
+}
+
+.col-xs-6 {
+  flex: 0 0 50%;
+}
+
+.col-xs-7 {
+  flex: 0 0 58.331%;
+}
+
+.col-xs-8 {
+  flex: 0 0 66.662%;
+}
+
+.col-xs-9 {
+  flex: 0 0 75%;
+}
+
+.col-xs-10 {
+  flex: 0 0 83.332%;
+}
+
+.col-xs-11 {
+  flex: 0 0 91.662%;
+}
+
+.col-xs-12 {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 567px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .text-sm-centered {
+    text-align: center;
+  }
+
+  .text-sm-left {
+    text-align: left;
+  }
+
+  .text-sm-right {
+    text-align: right;
+  }
+
+  .justify-sm-start {
+    justify-content: flex-start;
+  }
+
+  .justify-sm-center {
+    justify-content: center;
+  }
+
+  .justify-sm-end {
+    justify-content: flex-end;
+  }
+
+  .space-sm-between {
+    justify-content: space-between;
+  }
+
+  .col-sm-1 {
+    flex: 0 0 8.332%;
+  }
+
+  .col-sm-2 {
+    flex: 0 0 16.662%;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 25%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 33.332%;
+  }
+
+  .col-sm-5 {
+    flex: 0 0 41.662%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+  }
+
+  .col-sm-7 {
+    flex: 0 0 58.331%;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 66.662%;
+  }
+
+  .col-sm-9 {
+    flex: 0 0 75%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 83.332%;
+  }
+
+  .col-sm-11 {
+    flex: 0 0 91.662%;
+  }
+
+  .col-sm-12 {
+    flex: 0 0 100%;
+  }
+
+  //ORDER
+  .order-sm-0 {
+    order: 0;
+  }
+
+  .order-sm-1 {
+    order: 1;
+  }
+
+  .order-sm-2 {
+    order: 2;
+  }
+
+  .order-sm-3 {
+    order: 3;
+  }
+
+  .order-sm-4 {
+    order: 4;
+  }
+
+  .order-sm-5 {
+    order: 5;
+  }
+
+  .order-sm-6 {
+    order: 6;
+  }
+
+  .order-sm-7 {
+    order: 7;
+  }
+
+  .order-sm-8 {
+    order: 8;
+  }
+
+  .order-sm-9 {
+    order: 9;
+  }
+
+  .order-sm-10 {
+    order: 10;
+  }
+
+  .order-sm-11 {
+    order: 11;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .text-md-centered {
+    text-align: center;
+  }
+
+  .text-md-left {
+    text-align: left;
+  }
+
+  .text-md-right {
+    text-align: right;
+  }
+
+  .justify-md-start {
+    justify-content: flex-start;
+  }
+
+  .justify-md-center {
+    justify-content: center;
+  }
+
+  .justify-md-end {
+    justify-content: flex-end;
+  }
+
+  .space-md-between {
+    justify-content: space-between;
+  }
+
+  .col-md-1 {
+    flex: 0 0 8.332%;
+  }
+
+  .col-md-2 {
+    flex: 0 0 16.662%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.332%;
+  }
+
+  .col-md-5 {
+    flex: 0 0 41.662%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 58.331%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 66.662%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 75%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 83.332%;
+  }
+
+  .col-md-11 {
+    flex: 0 0 91.662%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+  }
+
+  //ORDER
+  .order-md-0 {
+    order: 0;
+  }
+
+  .order-md-1 {
+    order: 1;
+  }
+
+  .order-md-2 {
+    order: 2;
+  }
+
+  .order-md-3 {
+    order: 3;
+  }
+
+  .order-md-4 {
+    order: 4;
+  }
+
+  .order-md-5 {
+    order: 5;
+  }
+
+  .order-md-6 {
+    order: 6;
+  }
+
+  .order-md-7 {
+    order: 7;
+  }
+
+  .order-md-8 {
+    order: 8;
+  }
+
+  .order-md-9 {
+    order: 9;
+  }
+
+  .order-md-10 {
+    order: 10;
+  }
+
+  .order-md-11 {
+    order: 11;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .text-lg-centered {
+    text-align: center;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+
+  .justify-lg-start {
+    justify-content: flex-start;
+  }
+
+  .justify-lg-center {
+    justify-content: center;
+  }
+
+  .justify-lg-end {
+    justify-content: flex-end;
+  }
+
+  .space-lg-between {
+    justify-content: space-between;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 8.332%;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 16.662%;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 33.332%;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 41.662%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 50%;
+  }
+
+  .col-lg-7 {
+    flex: 0 0 58.331%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 66.662%;
+  }
+
+  .col-lg-9 {
+    flex: 0 0 75%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 83.332%;
+  }
+
+  .col-lg-11 {
+    flex: 0 0 91.662%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 100%;
+  }
+
+  //ORDER
+  .order-lg-0 {
+    order: 0;
+  }
+
+  .order-lg-1 {
+    order: 1;
+  }
+
+  .order-lg-2 {
+    order: 2;
+  }
+
+  .order-lg-3 {
+    order: 3;
+  }
+
+  .order-lg-4 {
+    order: 4;
+  }
+
+  .order-lg-5 {
+    order: 5;
+  }
+
+  .order-lg-6 {
+    order: 6;
+  }
+
+  .order-lg-7 {
+    order: 7;
+  }
+
+  .order-lg-8 {
+    order: 8;
+  }
+
+  .order-lg-9 {
+    order: 9;
+  }
+
+  .order-lg-10 {
+    order: 10;
+  }
+
+  .order-lg-11 {
+    order: 11;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .justify-xl-start {
+    justify-content: flex-start;
+  }
+
+  .justify-xl-center {
+    justify-content: center;
+  }
+
+  .justify-xl-end {
+    justify-content: flex-end;
+  }
+
+  .space-xl-between {
+    justify-content: space-between;
+  }
+
+  .col-xl-1 {
+    flex: 0 0 8.332%;
+  }
+
+  .col-xl-2 {
+    flex: 0 0 16.662%;
+  }
+
+  .col-xl-3 {
+    flex: 0 0 25%;
+  }
+
+  .col-xl-4 {
+    flex: 0 0 33.332%;
+  }
+
+  .col-xl-5 {
+    flex: 0 0 41.662%;
+  }
+
+  .col-xl-6 {
+    flex: 0 0 50%;
+  }
+
+  .col-xl-7 {
+    flex: 0 0 58.331%;
+  }
+
+  .col-xl-8 {
+    flex: 0 0 66.662%;
+  }
+
+  .col-xl-9 {
+    flex: 0 0 75%;
+  }
+
+  .col-xl-10 {
+    flex: 0 0 83.332%;
+  }
+
+  .col-xl-11 {
+    flex: 0 0 91.662%;
+  }
+
+  .col-xl-12 {
+    flex: 0 0 100%;
+  }
+
+  //ORDER
+  .order-xl-0 {
+    order: 0;
+  }
+
+  .order-xl-1 {
+    order: 1;
+  }
+
+  .order-xl-2 {
+    order: 2;
+  }
+
+  .order-xl-3 {
+    order: 3;
+  }
+
+  .order-xl-4 {
+    order: 4;
+  }
+
+  .order-xl-5 {
+    order: 5;
+  }
+
+  .order-xl-6 {
+    order: 6;
+  }
+
+  .order-xl-7 {
+    order: 7;
+  }
+
+  .order-xl-8 {
+    order: 8;
+  }
+
+  .order-xl-9 {
+    order: 9;
+  }
+
+  .order-xl-10 {
+    order: 10;
+  }
+
+  .order-xl-11 {
+    order: 11;
+  }
+}
+
+//UTILITIES
+
+//JUSTIFY CONTENT
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+//ALIGN ITEMS
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+//ALIGN SELF
+.a-self-start {
+  align-self: flex-start;
+}
+
+.a-self-center {
+  align-self: center;
+}
+
+.a-self-end {
+  align-self: flex-end;
+}
+

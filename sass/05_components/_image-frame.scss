@@ -1,0 +1,111 @@
+.img-frame {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba($color-secondary, .6);
+
+  .left-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @extend %center-item;
+    z-index: 100;
+    width: 10%;
+    background: white;
+    left: 15%;
+    opacity: .5;
+    border-radius: 50%;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+
+
+    img {
+      width: 100%;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      position: relative;
+      z-index: 101;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @extend %center-item;
+    width: 10%;
+    left: 85%;
+    background: $color-white;
+    opacity: .5;
+    border-radius: 50%;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+    
+    img {
+      width: 100%;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      position: relative;
+      z-index: 103;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  a:link {
+    width: 70%;
+    display: inline-block;
+    @extend %center-item;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.6);
+    }
+
+    img {
+      width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

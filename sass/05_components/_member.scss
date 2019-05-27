@@ -1,0 +1,74 @@
+.member {
+  border: 1px solid grey;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 .4rem 1.2rem .1rem rgba($color-black, .6);
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  margin-bottom: 3rem;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 .1rem 1.3rem rgba($color-black, .4);
+  }
+
+  &__img-box {
+    height: 25rem;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+
+
+    &--member-1 {
+      background: url("../../images/Me.png") center/cover no-repeat;
+    }
+
+    &--member-2 {
+      background: url("../../images/trixter.png") center/cover no-repeat;
+    }
+
+    &--member-3 {
+      background: url("../../images/mitacho-2.png") center/cover no-repeat;
+    }
+
+    &--member-4 {
+      background: url("../../images/krisko-3.png") center/cover no-repeat;
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    background: #fefefe;
+    text-align: center;
+    transform: rotate(-35deg);
+    right: -3rem;
+
+    width: 60%;
+
+    bottom: 8rem;
+
+    opacity: .7;
+  }
+
+  &__text {
+    padding: 2rem;
+    display: block;
+    background: $color-primary;
+    padding-top: 10rem;
+    margin-top: -10rem;
+    color: $color-white;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+
+    &:hover {
+      background: $color-secondary;
+      box-shadow: 0 .7rem 1rem 1rem rgba(mediumseagreen, .6);
+    }
+  }
+}

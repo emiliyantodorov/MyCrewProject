@@ -1,0 +1,51 @@
+.logo {
+  color: $color-white;
+  padding: 1.65rem 0;
+  @media only screen and(max-width: 767px) {
+    margin-left: auto;
+
+  }
+
+}
+
+.navbar {
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+
+  @media only screen and (max-width: 767px) {
+    display: none;
+    flex: 1 1 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:hover,
+    &:active {
+      background: #1dd1a1;
+    }
+
+    &--link {
+      color: $color-white;
+      display: block;
+      padding: 1.6rem 1.4rem;
+      transition: background .4s, forwards;
+
+
+    }
+
+    .members-arrow {
+      width: 1.4rem;
+      height: 1.4rem;
+      transition: all .4s;
+    }
+  }
+}
+
+.rotate-deg {
+  transform: rotate(-180deg);
+}
