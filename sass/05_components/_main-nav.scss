@@ -38,11 +38,25 @@
 
     }
 
-    .members-arrow {
-      width: 1.4rem;
-      height: 1.4rem;
-      transition: all .4s;
+    .members-arrow-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: auto;
+        -webkit-transition: all .6s;
+        -moz-transition: all .6s;
+        -ms-transition: all .6s;
+        -o-transition: all .6s;
+        transition: all .6s;
+      }
     }
+
   }
 }
 

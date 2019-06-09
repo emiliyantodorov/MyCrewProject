@@ -2,8 +2,17 @@
   padding: 8rem 0;
 }
 
+.padding-x {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padding-bottom {
+  padding-bottom: $padding-small;
+}
+
 .margin-auto {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .rotate-deg {

@@ -78,8 +78,15 @@ h2, h3, h4, h5, h6 {
 .padding-bigger {
   padding: 8rem 0; }
 
+.padding-x {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.padding-bottom {
+  padding-bottom: 1.4rem; }
+
 .margin-auto {
-  margin: auto; }
+  margin: 0 auto; }
 
 .rotate-deg {
   transform: rotate(-180deg); }
@@ -591,6 +598,31 @@ h2, h3, h4, h5, h6 {
     z-index: 3;
     opacity: .7; }
 
+.section-embetsa {
+  height: 70vh;
+  width: 100%;
+  background: #1dd1a1;
+  position: relative; }
+
+#trixter .dancer-photo {
+  background: url("../../images/trixter.png");
+  background-size: cover;
+  position: center;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#mitacho .dancer-photo {
+  background: url("../../images/mitacho-2.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#faun .dancer-photo {
+  background: url("../../images/krisko.png");
+  background-size: cover;
+  position: center;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .logo {
   color: #fff;
   padding: 1.65rem 0; }
@@ -618,10 +650,21 @@ h2, h3, h4, h5, h6 {
       display: block;
       padding: 1.6rem 1.4rem;
       transition: background .4s, forwards; }
-    .navbar__item .members-arrow {
-      width: 1.4rem;
-      height: 1.4rem;
-      transition: all .4s; }
+    .navbar__item .members-arrow-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .navbar__item .members-arrow-box img {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: auto;
+        -webkit-transition: all .6s;
+        -moz-transition: all .6s;
+        -ms-transition: all .6s;
+        -o-transition: all .6s;
+        transition: all .6s; }
 
 .rotate-deg {
   transform: rotate(-180deg); }
@@ -683,13 +726,13 @@ h2, h3, h4, h5, h6 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%); }
     .member__img-box--member-1 {
-      background: url("../images/Me.png") center/cover no-repeat; }
+      background: url("../../images/Me.png") center/cover no-repeat; }
     .member__img-box--member-2 {
-      background: url("../images/trixter.png") center/cover no-repeat; }
+      background: url("../../images/trixter.png") center/cover no-repeat; }
     .member__img-box--member-3 {
-      background: url("../images/mitacho-2.png") center/cover no-repeat; }
+      background: url("../../images/mitacho-2.png") center/cover no-repeat; }
     .member__img-box--member-4 {
-      background: url("../images/krisko-3.png") center/cover no-repeat; }
+      background: url("../../images/krisko-3.png") center/cover no-repeat; }
   .member__heading {
     position: absolute;
     background: #fefefe;
@@ -873,27 +916,26 @@ hr {
   left: 0;
   top: 6rem;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  z-index: 8000; }
   @media only screen and (max-width: 767px) {
     .inner-nav-members {
       width: 50%;
       right: 0;
-      left: unset;
-      z-index: 6000; } }
+      left: unset; } }
   .inner-nav-members__item {
     background: #1dd1a1; }
     .inner-nav-members__item--link {
-      color: #fff; }
-      .inner-nav-members__item--link:link {
-        display: block;
-        padding: 1rem 0;
-        -webkit-transition: all .2s;
-        -moz-transition: all .2s;
-        -ms-transition: all .2s;
-        -o-transition: all .2s;
-        transition: all .2s; }
-        .inner-nav-members__item--link:link:hover {
-          background: #10ac84; }
+      color: #fff;
+      display: block;
+      padding: 1rem 0;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s; }
+      .inner-nav-members__item--link:hover {
+        background: #10ac84; }
 
 .mobile-btn__icon {
   width: 3rem;
@@ -921,5 +963,50 @@ hr {
     left: 0;
     display: inline-block;
     background: #fff; }
+
+.dancer-heading-box {
+  width: 100%;
+  padding-top: 8rem; }
+  .dancer-heading-box .dancer-photo {
+    background: url("../../images/11204977_954906547875816_7251503718956542967_n.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 24rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem; }
+    @media (max-width: 768px) {
+      .dancer-heading-box .dancer-photo {
+        width: 50%; } }
+    @media (max-width: 574px) {
+      .dancer-heading-box .dancer-photo {
+        width: 80%; } }
+    .dancer-heading-box .dancer-photo:hover img {
+      -webkit-transform: scale(1.4);
+      -moz-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      -o-transform: scale(1.4);
+      transform: scale(1.4); }
+    .dancer-heading-box .dancer-photo img {
+      max-width: 100%;
+      position: relative;
+      bottom: 12rem;
+      -webkit-transition: all .6s;
+      -moz-transition: all .6s;
+      -ms-transition: all .6s;
+      -o-transition: all .6s;
+      transition: all .6s; }
+      @media (max-width: 768px) {
+        .dancer-heading-box .dancer-photo img {
+          bottom: 17rem; } }
+      @media (max-width: 574px) {
+        .dancer-heading-box .dancer-photo img {
+          bottom: 22rem; } }
+  .dancer-heading-box h1 {
+    padding-bottom: 1.4rem;
+    text-transform: uppercase;
+    font-size: 3rem; }
 
 /*# sourceMappingURL=styles.css.map */
