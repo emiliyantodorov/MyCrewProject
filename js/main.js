@@ -65,13 +65,13 @@ function start() {
     ///////////////
     // Add inner nav bar
     let innerNavbarEl = $(".inner-nav-members");
-    let arrowLinkEl = $(".members-arrow").parent();
+    let arrowLinkEl = $(".members-arrow-box");
 
     arrowLinkEl.on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
 
-        $(".members-arrow").toggleClass("rotate-deg");
+        $(".members-arrow-box__arrow").toggleClass("rotate-deg");
         innerNavbarEl.slideToggle();
 
     });
