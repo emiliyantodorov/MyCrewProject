@@ -1,56 +1,14 @@
 .dancer-heading-box {
   width: 100%;
-  padding-top: 8rem;
 
   .dancer-photo {
-    background: url("../../images/11204977_954906547875816_7251503718956542967_n.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30%;
-    height: 24rem;
-    margin: 0 auto;
     overflow: hidden;
-    border-radius: 1rem;
-    //margin-bottom: 2rem;
-
-    @media (max-width: 768px) {
-      width: 50%;
-    };
-    @media (max-width: 574px) {
-      width: 80%;
-    };
-
-    &:hover img {
-      -webkit-transform: scale(1.4);
-      -moz-transform: scale(1.4);
-      -ms-transform: scale(1.4);
-      -o-transform: scale(1.4);
-      transform: scale(1.4);
-    }
 
     img {
       max-width: 100%;
-      position: relative;
-      bottom: 12rem;
-
-      @media (max-width: 768px) {
-        bottom: 17rem;
-      };
-      @media (max-width: 574px) {
-        bottom: 22rem;
-      };
-      -webkit-transition: all .6s;
-      -moz-transition: all .6s;
-      -ms-transition: all .6s;
-      -o-transition: all .6s;
-      transition: all .6s;
+      border-radius: 1rem 0 1rem 0;
     }
   }
 
-  h1 {
-    padding-bottom: $padding-small;
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
+  
 }

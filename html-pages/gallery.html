@@ -6,6 +6,8 @@
     <title>Gallery</title>
     <!--    Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
     <!--    CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -19,10 +21,9 @@
                 </div>
             </div>
 
-
-            <div class="logo">
+            <a href="../index.html" class="logo">
                 ET company
-            </div>
+            </a>
 
             <ul class="navbar">
                 <li class="navbar__item">
@@ -55,7 +56,7 @@
                     <a href="../html-pages/gallery.html" class="navbar__item--link">Gallery</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__item--link">Contacts</a>
+                    <a href="../index.html#contacts" class="navbar__item--link">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -66,19 +67,23 @@
     <section class="section-gallery padding-bigger">
         <!--    Frame for the clicked img-->
         <div class="img-frame">
+
             <div class="left-arrow">
                 <img src="../images/gallery/top-arrow.png" alt="Left arrow">
             </div>
             <a href="#">
-                <img src="../images/gallery/freez-1.jpg" alt="Current gallery img">
+                <div class="close-btn">
+                    <img class="close-btn__img" src="../images/gallery/icon-close-512.png" alt="">
+                </div>
+                <img class="main-img" src="../images/gallery/freez-1.jpg" alt="Current gallery img">
             </a>
             <div class="right-arrow">
-                <img src="../images/gallery/top-arrow.png" alt=" arrow">
+                <img src="../images/gallery/top-arrow.png" alt="Right arrow">
             </div>
         </div>
 
         <div class="container">
-            <h2 class="gallery-heading text-centered">
+            <h2 class="heading-secondary gallery-heading text-centered">
                 OUR PHOTOS
             </h2>
 
@@ -125,7 +130,7 @@
             <a href="https://www.facebook.com/emilian.todorov.5" target="_blank" class="social-box__link">
                 <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="" target="_blank" class="social-box__link">
+            <a href="https://www.instagram.com/emibademi123/?hl=bg" target="_blank" class="social-box__link">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
@@ -135,7 +140,11 @@
 
 </footer>
 <!--SCRIPTS-->
-<script src="../js/jquery-3.3.1.js"></script>
+<!--<script src="../js/jquery-3.3.1.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

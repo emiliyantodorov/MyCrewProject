@@ -20,10 +20,18 @@ function start() {
     ////////////////
     // Making the gallery functionality
     let allImages = $(".photo-list__item--img img").toArray();
-    let imgFromFrame = $(".img-frame a img");
+    let imgFromFrame = $(".img-frame a .main-img");
     let imgFrame = $(".img-frame");
     let leftArrow = $(".left-arrow");
     let rightArrow = $(".right-arrow");
+    let closeButton = $(".close-btn");
+
+    closeButton.on("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        imgFrame.hide();
+    });
 
     allImages.forEach((el, index) => {
         $(el).on("click", showTheFirstPhoto)

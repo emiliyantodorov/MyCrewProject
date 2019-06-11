@@ -8,6 +8,7 @@
       display: block;
       overflow: hidden;
       margin-bottom: 3rem;
+      box-shadow: 0 .3rem .7rem  rgba($color-black, .6);
 
       @media only screen and(min-width: 0) {
         height: auto;
@@ -23,6 +24,12 @@
 
       img {
         width: 100%;
+        transform: scale(1.2);
+        transition: all .6s;
+
+        &:hover {
+          transform: scale(1);
+        }
       }
     }
   }

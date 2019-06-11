@@ -1,5 +1,8 @@
 .contact-box {
-
+  @media (max-width: 767px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   &__icon {
     font-size: 3rem;
     padding-bottom: $padding-small;

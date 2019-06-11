@@ -3,8 +3,8 @@
   padding: 1.65rem 0;
   @media only screen and(max-width: 767px) {
     margin-left: auto;
-
-  }
+  };
+  outline: none;
 
 }
 
@@ -34,8 +34,7 @@
       display: block;
       padding: 1.6rem 1.4rem;
       transition: background .4s, forwards;
-
-
+      outline: none;
     }
 
     .members-arrow-box {
