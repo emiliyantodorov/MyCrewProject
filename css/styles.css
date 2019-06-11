@@ -740,13 +740,13 @@ h3 {
       .member__img-box {
         height: 53rem; } }
     .member__img-box--member-1 {
-      background: url("../../images/Me.png") center/cover no-repeat; }
+      background: url("../images/Me.png") center/cover no-repeat; }
     .member__img-box--member-2 {
-      background: url("../../images/trixter.png") center/cover no-repeat; }
+      background: url("../images/trixter.png") center/cover no-repeat; }
     .member__img-box--member-3 {
-      background: url("../../images/mitacho-2.png") center/cover no-repeat; }
+      background: url("../images/mitacho-2.png") center/cover no-repeat; }
     .member__img-box--member-4 {
-      background: url("../../images/krisko-3.png") center/cover no-repeat; }
+      background: url("../images/krisko-3.png") center/cover no-repeat; }
   .member__heading {
     position: absolute;
     background: #fefefe;
